@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +11,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.todoList .layout{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.todoList Header{
+  background-color: rgb(59, 58, 58);
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+}
+.todoList Header input{
+  width: 300px;
+  height: 30px;
+  margin-left: 50px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.todoList .description{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 30px;
+}
+.todoList .description h3{
+  font-size: 30px;
+  font-weight: 900;
+}
+.todoList ul li{
+  margin: 20px auto;
+  width: 500px;
+  height: 30px;
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.todoList ul li input{
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 25px;
+}
+.todoList ul li .icons{
+  color: #aaa;
+}
+.todoList ul li .icons:hover{
+  color: red;
+}
+.todoList ul .doneLi{
+  background-color: #ccc;
+}
+.todoList ul .doneLi input{
+  background-color: #ccc;
 }
